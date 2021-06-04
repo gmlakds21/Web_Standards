@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Form</title>
+</head>
+<body>
+	<h1>Block 과 Inline </h1>
+
+	<div>div</div>
+	<div>div</div>
+	<div>div</div>
+	
+	<span>span</span>
+	<span>span</span>
+	<span>span</span>
+	
+	<h1>Form</h1>
+	
+	<h2>간단한 Form</h2>
+	<form>
+		<div>
+			<label for="userid">아이디</label>
+			<input type="text" name="userid">
+		</div>
+		<div>
+			<label for="passwd">비밀번호</label>
+			<input type="password" name="passwd">
+		</div>
+	</form>
+	
+	<h2>From 통신</h2>
+	<!-- url에 담아서 제출 -->
+	<form method="get">
+		<div>
+			<label for="userid">아이디</label>
+			<input type="text" name="userid">
+		</div>
+		<div>
+			<label for="passwd">비밀번호</label>
+			<input type="password" name="passwd">
+		</div>
+		<div>
+			<button type="submit">제출</button>
+		</div>
+	</form>
+
+	<form method="post">
+	<!-- url 에 보이지 않고 숨겨서 제출 -->
+		<div>
+			<label for="userid">아이디</label>
+			<input type="text" name="userid">
+		</div>
+		<div>
+			<label for="passwd">비밀번호</label>
+			<input type="password" name="passwd">
+		</div>
+		<div>
+			<button type="submit">제출</button>
+		</div>
+	</form>
+</body>
+</html>

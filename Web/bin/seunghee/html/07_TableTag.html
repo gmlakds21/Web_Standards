@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Table Tag</title>
+</head>
+<body>
+	<h1>테이블 태그</h1>
+	
+	<h2>테이블 작성</h2>
+	<table>
+		<tr>
+			<th>번호</th> <th>이름</th> <th>나이</th>
+		</tr>
+		<tr>
+			<td>1</td> <td>유재석</td> <td>20</td>
+		</tr>
+		<tr>
+			<td>2</td> <td>김종국</td> <td>25</td>
+		</tr>
+	</table>
+	<hr>
+	
+	<h2>고급 테이블 작성</h2>
+	<table>
+		<caption>회원 테이블</caption>
+		<thead>
+			<tr>
+				<th>번호</th> <th>이름</th> <th>나이</th>
+			</tr>		
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td> <td>유재석</td> <td>20</td>
+			</tr>
+			<tr>
+				<td>2</td> <td>김종국</td> <td>25</td>
+			</tr>
+		</tbody>
+		<tfoot>
+			<tr>
+				<td>총합</td> <td>2</td> <td>45</td>
+			</tr>
+		</tfoot>
+	</table>
+	<hr>
+	
+	<h2>복잡한 테이블 작성</h2>
+	<table border = "1">
+		<tr> <td>1</td> <td>2</td> <td>3</td> <td>4</td>  </tr>
+		<tr> <td colspan="2">5</td> <td>6</td> <td>7</td> </tr>
+		<tr> <td>8</td> <td colspan="3">9</td> </tr>
+	</table>
+	<table border = "1">
+		<tr> <td>1</td> <td rowspan="2">4</td> <td>6</td>             <td rowspan="3">8</td> </tr> 
+		<tr> <td>2</td>                        <td rowspan="2">7</td>                        </tr>
+		<tr> <td>3</td> <td>5</td>                                                           </tr>
+	</table>
+</body>
+</html>
