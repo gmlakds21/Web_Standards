@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Position</title>
+</head>
+
+	<h1>위치 지정</h1>
+	
+	<h2>Static : 기본 배치 방식</h2>
+	<head>
+		<style>
+			#p11 {width:50px; height:50px; background:yellow; position:static}
+		</style>
+	</head>
+	<body>
+		<div id="p11"> Static </div>
+		<hr>
+	</body>
+		
+	<h2>Relative : 상대 좌표 </h2>
+	<head>
+		<style>
+			#p21 {width:50px; height:50px; background:green; position:relative; top:20px; left:20px;}
+			#p22 {width:100px; height:100px; background:orange; position:relative; top:20px; left:20px;}
+			#p23 {width:50px; height:50px; background:red; position:relative; top:20px; left:30px;}
+		</style>
+	</head>
+	<body>
+		<div id="p21"> relative </div><br>
+		<div id="p22">
+			<div id="p23">relative2</div>
+		</div>
+		<hr>
+	</body>
+	
+	<h2>absolute : 절대 좌표</h2>
+	<head>
+		<style>
+			#p31 {width:50px; height:50px; background:red; position:absolute; top:20px; left:30px;}
+			#p32 {width:50px; height:50px; background:red; position:absolute; top:20px; left:30px;}
+			#p33 {width:50px; height:50px; background:yellow; position:absolute; top:20px; right:40px;}
+		</style>
+	</head>
+	<body>
+		<div id="p31">
+			<div id="p32">absolute</div>
+		</div>
+		<div id="p33"> absolute2 </div>
+		<hr>
+	</body>
+	
+	<h2>fixed : 고정 좌표</h2>
+	<head>
+		<style>
+			#p41 {width:50px; height:50px; background:blue; position:fixed; top:50px; right:50px;}
+		</style>
+	</head>
+	<body>
+		<div id="p41">fixed</div>
+	</body>
+</html>

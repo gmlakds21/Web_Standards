@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Transform / Transition</title>
+	<style>
+			div {width:100px; height:100px; border : 1px solid black;}
+	</style>
+</head>
+	
+	<h2>Transform</h2>
+	<head>
+		<style>
+			#d11:hover {transform:translate(100px, 200px)}
+			#d12:hover {transform:scale(2, 2)}
+			#d13:hover {transform:rotate(40deg)}
+			#d14:hover {transform:skew(20deg, 20deg)}
+		</style>
+	</head>		
+	<body>
+		<div id="d11"> 11 </div>
+		<div id="d12"> 12 </div>
+		<div id="d13"> 13 </div>
+		<div id="d14"> 14 </div>
+	</body>
+		
+	<h2>Transition</h2>
+	<head>
+		<style>
+			#d21 {transition-property:background-color; transition-duration:2s}
+			#d21:hover {background:orange}
+			#d22 {transition-property:width; transition-duration:3s; transition-timing-fuction:ease}
+			#d22:hover {width:1000px} 
+			#d23 {transition-property:width; transition-duration:3s; transition-timing-fuction:ease-in-out}
+			#d23:hover {width:1000px} 
+			#d24 {transition-property:all; transition-duration:5s}
+			#d24:hover {transform:rotate(720deg)}
+		</style>
+	</head>
+	<body>
+		<div id="d21"> 21 </div>
+		<div id="d22"> 22 </div>
+		<div id="d23"> 23 </div>
+		<div id="d24"> 24 </div>
+	</body>
+	
+</html>

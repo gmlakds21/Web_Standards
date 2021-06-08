@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript</title>
+</head>
+
+	<h1>자바 스크립트</h1>
+    <head>
+        <script>
+            alert('Hello, World #1');
+        </script>
+    </head>
+    <body>
+        <h1>자바스크립트 개요</h1>
+        <button type="button" onclick="alert('Hello, World #3')">여기를 눌러보세요!</button>
+        <script>
+            alert('Hello, World #2');
+        </script>
+        <hr>
+    </body>
+
+
+    <h2>자바스크립트 문법</h2>
+    <body>
+        <script>
+            var name = '승희';
+            kor = 99;
+            let eng = 98;
+            let mat = 99;
+
+            tot = kor + eng + mat;
+            avg = tot/3;
+
+            document.write("<p>");
+            document.write(name+"<br>");
+            document.write(kor+"<br>");
+            document.write(eng+"<br>");
+            document.write(mat+"<br>");
+            document.write(tot+"<br>");
+            document.write(avg+"<br>");
+        </script>
+        <hr>
+    </body>
+
+
+    <h2>자바스크립트 출력문</h2>
+    <h3> </h3>
+    <body>
+        <script>
+            console.log(name);
+            console.log(tot);
+
+            let h3 = document.getElementsByTagName('h3')
+            h3[0].innerHTML = name + "/" + tot;
+        </script>
+        <hr>
+    </body>
+</html>

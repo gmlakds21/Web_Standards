@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>If, Switch</title>
+</head>
+<body>
+    <h2>조건문 : if</h2>
+    <script>
+        let name = '유재석';
+        let kor = 99;
+        let eng = 99;
+        let mat = 98;
+        let tot = 0;
+        let avg = 0;
+        let grd = 0;
+
+        tot = kor + eng + mat;
+        avg = tot/3;
+        if ( avg > 90 ) { grd = '수'; }
+        else if ( avg > 80 ) { grd = '우'; }
+        else if ( avg > 70 ) { grd = '미'; }
+        else if ( avg > 60 ) { grd = '양'; }
+        else { grd = '가'; }
+
+        document.write('이름 : '+name+'<br>');
+        document.write('국어 : '+kor+'<br>');
+        document.write('영어 : '+eng+'<br>');
+        document.write('수학 : '+mat+'<br>');
+        document.write('총점 : '+tot+'<br>');
+        document.write('평균 : '+Math.round(avg*100)/100+'<br>');
+        document.write('평균 : '+avg.toFixed(2)+'<br>');
+        document.write('평균 : '+avg.toFixed(3)+'<br>');
+        document.write('학점 : '+grd+'<br>');
+    </script>
+    <hr>
+
+
+    <h2>다중 조건문 : switch</h2>
+    <script>
+        switch ( Math.round(avg/10) ) {
+            case 10 :
+            case 9 : grd = '수'; break;
+            case 8 : grd = '우'; break;
+            case 7 : grd = '미'; break;
+            case 6 : grd = '양'; break;
+            case 5 : grd = '가'; break;
+            default : grd = '불' ; break;
+        }
+        document.write(grd+'<br>');
+    </script>
+    <hr>
+</body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>JavaScript Type</title>
+</head>
+
+<body>
+	<h1>자바스크립트 타입</h1>
+    
+    <h2>숫자형, 문자형, 논리형</h2>
+    <script>
+        let num1 = 123;
+        let num2 = 123.456;
+        let num3 = 10e3;  // 10 x 10 x 10;
+
+        document.write(num1, '<br>');
+        document.write(num2, '<br>');
+        document.write(num3, '<br>');
+        document.write('<br>');
+
+        let str1 = "Hello, World!!";
+        let str2 = 'Hello, World!!';
+
+        document.write(str1, '<br>');
+        document.write(str2, '<br>');
+        document.write('<br>');
+
+        let bool1 = 10 > 5;
+        document.write('10 > 5 ?', '<br>');
+        document.write(bool1, '<br>');
+        document.write('<br>');
+    </script>
+    <hr>
+
+
+    <h2>객체형</h2>
+    <script>
+        let person = { name:'혜교', kor: 99, eng: 94, mat:98 };
+
+        document.write(person.name+'<br>');
+        document.write(person.kor+'/'+person.eng+'/'+person.mat+'<br>');
+        document.write('<br>')
+    </script>
+    <hr>
+
+
+    <h2>null 과 undefined</h2>
+    <script>
+        let data;
+        document.write(data+'<br>')
+        document.write('<br>')
+
+        let one = 123;
+        document.write(one+'<br>')
+        one = 'Hello'
+        document.write(one+'<br>')
+        document.write('<br>')
+
+        let two = 10 + ' Hello';
+        document.write(two,'<br>');
+        let three = '3' * '5';
+        document.write(three,'<br>');
+        let four = 'world' - 999;
+        document.write(four,'<br>')
+        document.write('<br>')
+    </script>
+    <hr>
+
+
+    <h2>명시적 형변환</h2>
+    <script>
+        document.write(Number('123'),'<br>');
+        document.write(String(123),'<br>');
+        document.write(parseInt('123'),'<br>');
+        document.write(parseFloat('456.789'),'<br>');
+        document.write('<br>')
+
+        document.write(Number('001'),'<br>');
+        document.write(parseInt('001'),'<br>');
+        document.write(Number('2021년'),'<br>');
+        document.write(parseInt('2021년'),'<br>');
+        document.write(Number('총3500원'),'<br>');
+        document.write(parseInt('총3500원'),'<br>');
+        document.write('<br>')
+    </script>
+    <hr>
+
+
+    <h2>연산자</h2>
+    <script>
+        let x = 10, y = 10;
+        document.write((++x + 3)+'<br>');
+        document.write((y++ + 3)+'<br>');
+        y = x-- +5 + --y;
+        document.write((y)+"<br>");
+        document.write('<br>');
+
+        let a=3, b=3, c='3';
+
+        document.write((a==b)+'<br>');
+        document.write((a===b)+'<br>');
+        document.write((a==c)+'<br>');
+        document.write((a===c)+'<br>');
+        document.write('<br>')
+
+        document.write(typeof(num1)+'<br>');
+        document.write(typeof(str1)+'<br>');
+        document.write(typeof(bool1)+'<br>');
+        document.write(typeof(person)+'<br>');
+    </script>
+</body>
+
+</html>

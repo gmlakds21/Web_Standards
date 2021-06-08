@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Array</title>
+</head>
+<body>
+    <h2>배열</h2>
+    <script>
+	    var names = ['혜교', '지현', '수지'];
+	    var kors = [99, 88, 77];
+	    var engs = Array(98, 87, 75);
+	    var mats = new Array(93, 82, 71);
+	
+	    var tots = [0, 0, 0];
+	    var avgs = [0, 0, 0];
+	    var grds = [0, 0, 0];
+
+        for ( var i = 0; i<3; i++ ) {
+            tots[i] = kors[i] + engs[i] + mats[i];
+            avgs[i] = Math.round(tots[i]/3*100)/100;
+
+            switch ( Math.round(avgs[i]/10) ) {
+                case 10 :
+                case 9 : grds[i] = '수'; break;
+                case 8 : grds[i] = '우'; break;
+                case 7 : grds[i] = '미'; break;
+                case 6 : grds[i] = '양'; break;
+                default : grds[i] = '가';
+            }
+            document.write(names[i],' - ',kors[i],' ',engs[i],' ',mats[i],' / ',tots[i],' ',avgs[i],' / ',grds[i],'<br>');
+        }
+    </script>
+    <hr>
+</body>
+</html>
